@@ -16,11 +16,11 @@ async def main():
     )
 
     # CVS contact info
-    parser.add_argument("--first_name", default="First")
-    parser.add_argument("--last_name", default="Last")
+    parser.add_argument("--first_name", default="Joe")
+    parser.add_argument("--last_name", default="Doe")
     parser.add_argument("--email", default="user@example.com")
-    parser.add_argument("--birthday", default="MM-DD-YYYY")
-    parser.add_argument("--zip_code", default="00000")
+    parser.add_argument("--birthday", default="01-01-1990")
+    parser.add_argument("--zip_code", default="94404")
 
     # run config
     parser.add_argument("--exp_name", default="cvs")
@@ -58,7 +58,7 @@ async def main():
         "Open a new tab, go to www.cvs.com, type 'flu shot' in the search bar and press enter, wait for the page to load, then click on the button of Schedule vaccinations on the top of the page",
         f"Enter the first name '{args.first_name}', last name '{args.last_name}', and email '{args.email}' in the form. Do not use any suggested autofills. Make sure the mobile phone number is empty.",
         f"Slightly scroll down to see the date of birth, enter Month '{month}', Day '{day}', and Year '{year}' in the form",
-        "Click on 'Continue as guest' button, wait for the page to load with wait, click on 'Add vaccines' button, select 'Flu' and click on 'Add vaccines'",
+        "Scroll down and click on 'Continue as guest' button, wait for the page to load with wait, click on 'Add vaccines' button, select 'Flu' and click on 'Add vaccines'",
         f"Click on 'next' to enter the page with recommendation vaccines, then click on 'next' again, until on the page of entering zip code, enter '{args.zip_code}', select the first option from the dropdown menu, and click on 'Search'",
     ]
 
